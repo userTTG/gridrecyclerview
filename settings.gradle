@@ -1,0 +1,19 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+//        google()
+//        mavenCentral()
+        //阿里google()镜像
+        maven {
+            url "https://maven.aliyun.com/repository/google"
+        }
+        //阿里jcenter()central()镜像
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "GridRecyclerView"
+include ':app'
+include ':library'
